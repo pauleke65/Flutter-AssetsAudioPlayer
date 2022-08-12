@@ -16,7 +16,7 @@ class AssetsAudioPlayerWebPlugin {
   WebPlayer _newPlayer(String id, MethodChannel channel) {
     return WebPlayerHtml(
       channel: channel,
-    );
+    ) as WebPlayer;
   }
 
   WebPlayer _getOrCreate(String id) {
